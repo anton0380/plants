@@ -18,6 +18,12 @@ const appRoutes: Routes = [
   },
   {
     path: '', pathMatch: 'full', component: MainComponent
+  },
+  {
+    path: '**', component: StaticPageComponent, data: {
+      fileName: '404.html',
+      title: 'Ошибка'
+    }
   }
 ];
 
